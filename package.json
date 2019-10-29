@@ -8,11 +8,11 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir . --ignore **/__tests__",
+    "build": "tsc",
     "prepare": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir . --ignore **/__tests__",
+    "watch": "tsc -watch",
     "test": "jest",
-    "format": "prettier --write \"src/**/*.js\""
+    "format": "prettier --write \"src/**/*.ts\""
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
@@ -21,9 +21,10 @@
     "babel-jest": "^23.6.0",
     "babel-preset-gatsby-package": "^0.1.3",
     "cross-env": "^5.2.0",
-    "jest": "^23.6.0",
+    "jest": "^24.9.0",
     "prettier": "^1.15.3",
-    "regenerator-runtime": "^0.13.1"
+    "regenerator-runtime": "^0.13.1",
+    "typescript": "^3.6.4"
   },
   "peerDependencies": {
     "gatsby": ">2.0.0-alpha"
@@ -33,5 +34,10 @@
     "gatsby",
     "gatsby-plugin"
   ],
-  "repository": "https://github.com/devrchancay/gatsby-plugin-starter"
+  "repository": "https://github.com/devrchancay/gatsby-plugin-starter",
+  "dependencies": {
+    "@types/jest": "^24.0.20",
+    "gatsby-plugin-ts": "^2.0.1",
+    "ts-jest": "^24.1.0"
+  }
 }

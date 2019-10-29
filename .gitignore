@@ -1,5 +1,5 @@
 /*.js
-!index.js
+!index.ts
 yarn.lock
 coverage
 *.log
