@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   plugins: [
     {
       resolve: `gatsby-plugin-ts`,

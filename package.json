@@ -27,7 +27,7 @@
     "typescript": "^3.6.4"
   },
   "peerDependencies": {
-    "gatsby": ">2.0.0-alpha"
+    "gatsby": ">3.0.0"
   },
   "homepage": "https://github.com/devrchancay/gatsby-plugin-starter",
   "keywords": [
